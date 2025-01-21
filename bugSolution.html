@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    let myDiv = document.getElementById("myDiv");
+    let myAttribute = myDiv.getAttribute("myAttribute"); // Proper way to check
+
+    if (myAttribute !== null) {
+      console.log("Attribute exists: ", myAttribute);
+    } else {
+      console.log("Attribute does not exist. Using a default value instead.");
+    }
+  </script>
+</body>
+</html>
